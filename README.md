@@ -6,3 +6,4 @@
 
 ## Tools/Technology: Adobe Illustrator, GitHub, Vercel, nextjs.org, Javascript, Typescript 
 
+# Colors used: #FFFFFF (white) ##49A3EF (light blue) #0e1346 (dark blue)
