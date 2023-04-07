@@ -13,7 +13,12 @@ We are creating a web app that covers the topic of drug awareness. We will be fo
 - Javascript
 
 # Colors used:
-- #FFFFFF (white)
-- #C8EDEE (light green)
-- #3E91D5 (light blue)
-- #03254C (dark blue)
+- Cyan: #3F9DB7
+- Light Blue: #3E91D5
+- Light Green: #C8EDEE
+- Orange: #F36437
+- Dark Blue: #03254C
+- Red: #FF0000
+- White: #FFFFFF
+- Black: #000000
+- Grey: #5B5B5B

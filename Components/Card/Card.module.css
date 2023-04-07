@@ -1,0 +1,23 @@
+.container {
+    background-color: var(--light-green);
+    border-radius: 12px;
+    width: 300px;
+    height: 235px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.description {
+    margin-top: -10px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 30px;
+}

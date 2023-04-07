@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/home.module.css'
-import Card from '../Components/Card'
-import ButtonH from '../Components/ButtonH'
+import styles from '../styles/landing.module.css'
+import ButtonL from '../Components/ButtonL'
 
 
-export default function Home() {
+export default function Landing() {
   return (
     <>
       <Head>
@@ -15,9 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.header}>DrugMinder</h1>
-        <Card/>
-        <ButtonH/>
+        <Image src="/logo.png" alt="Drug Image" width={135} height={135}/>
+        <h1>DrugMinder</h1>
+        <p>Yorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <ButtonL/>
       </main>
     </>
   )
