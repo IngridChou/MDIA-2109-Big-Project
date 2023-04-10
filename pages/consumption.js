@@ -6,11 +6,13 @@ import Next from "../Components/Next"
 import NavBar from "../Components/NavBar"
 import ProgressBar1 from "../Components/QuizProgressBar1"
 import Link from 'next/link'
+import PrevButton from '../Components/PrevButton'
 
 export default function Consumption() {
     return (
         <>
         <div className={styles.main}>
+            <PrevButton/>
             <h2>Step 2 of 3</h2>
             <ProgressBar1/>
             <h1>Select the Dosage taken within XX</h1>

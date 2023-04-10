@@ -4,9 +4,9 @@ import styles from './ProgressBar.module.css'
 export default function ProgressBar1() {
     return (
         <>
-            <div className={styles.main}>
-                <div className={styles.inprogress}/>
-                <div className={styles.section}/>
+            <div className={styles.inprogress} />
+            <div className={styles.mainbar}>
+                <div className={styles.section} />
             </div>
         </>
     )

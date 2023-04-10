@@ -6,11 +6,13 @@ import Next from "../Components/Next"
 import NavBar from "../Components/NavBar"
 import ProgressBar1 from "../Components/QuizProgressBar1"
 import Link from 'next/link'
+import PrevButton from '../Components/PrevButton'
 
 export default function DrugChoice() {
     return (
         <>
             <div className={styles.main}>
+                <PrevButton/>
                 <h2>Step 1 of 3</h2>
                 <ProgressBar1 />
                 <h1>Select a Substance to Test for</h1>

@@ -14,3 +14,9 @@
     justify-content: space-evenly;
     border-radius: 0.801rem
 }
+
+.main:hover {
+    background-color: #003674;
+    transition: 0.15s;
+    opacity: 0.9;
+}
