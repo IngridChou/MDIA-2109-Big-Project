@@ -22,7 +22,6 @@ export default function Quiz() {
     <h1 >Quiz</h1>
 
     <h2>Ready to take quiz for you or a friend?</h2>
-    <StartQuiz/>
 
 
       
