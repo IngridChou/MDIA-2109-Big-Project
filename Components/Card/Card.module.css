@@ -6,6 +6,7 @@
     border-radius: 12px;
     width: 300px;
     height: 235px;
+    border: none;
 }
 
 .text {
@@ -15,6 +16,9 @@
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
     font-size: 15px;
+    align-items: flex-start;
+    position: relative;
+    top: -18px;
 }
 
 .description {

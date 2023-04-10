@@ -6,10 +6,11 @@ import Link from 'next/link'
 export default function ButtonL() {
     return (
         <>
-            <div className={styles.button}>
-                <Link href="/reflection">Get Started</Link>
-                <Image src="/arrow.png" alt="Drug Image" width={23} height={17} />
-            </div>
+            <Link className={styles.link} href="/">
+                <button className={styles.button}>Get Started
+                    <Image src="/arrow.svg" alt="Arrow" width={35} height={35} />
+                </button>
+            </Link>
         </>
     )
 }

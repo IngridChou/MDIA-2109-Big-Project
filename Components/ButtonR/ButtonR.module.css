@@ -1,17 +1,21 @@
+/*Kanit Medium 500*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
 .button {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-evenly;
+    position: relative;
+    gap: 65px;
     align-items: center;
-    width: 260px;
+    width: 300px;
     height: 60px;
     border-radius: 12px;
     background-color: var(--cyan);
-    border: none;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 15px;
+    border: none;
     color: var(--white);
 }
 
