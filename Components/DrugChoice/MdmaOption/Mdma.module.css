@@ -12,7 +12,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 0.801rem
+    border-radius: 0.801rem;
+    transition: background-color 0.15s ease-in-out;
 }
 
 .main:hover {
@@ -20,3 +21,8 @@
     transition: 0.15s;
     opacity: 0.9;
 }
+
+.selected {
+    background-color: #03254C;
+    opacity: 0.9;
+  }
