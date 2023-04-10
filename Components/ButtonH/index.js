@@ -7,18 +7,21 @@ export default function ButtonH() {
     return (
         <>
             <div className={styles.container}>
-                <div className={styles.intro}>
-                    <Link className={styles.link} href="/reflection">Introduction</Link>
-                    <Image src="/arrow.png" alt="Drug Image" width={23} height={17} />
-                </div>
-                <div className={styles.quiz}>
-                    <Link className={styles.link} href="/quiz">Take a Quiz</Link>
-                    <Image src="/arrow.png" alt="Drug Image" width={23} height={17} />
-                </div>
-                <div className={styles.about}>
-                    <Link className={styles.link} href="/">About Us</Link>
-                    <Image src="/arrow.png" alt="Drug Image" width={23} height={17} />
-                </div>
+                <Link className={styles.link} href="/reflection">
+                    <button className={styles.intro}>Introduction
+                        <Image src="/arrow.svg" alt="Drug Image" width={35} height={35} />
+                    </button>
+                </Link>
+                <Link className={styles.link} href="/quiz">
+                    <button className={styles.quiz}>Take a Quiz
+                        <Image src="/arrow.svg" alt="Drug Image" width={35} height={35} />
+                    </button>
+                </Link>
+                <Link className={styles.link} href="/about">
+                    <button className={styles.about}>About Us
+                        <Image src="/arrow.svg" alt="Drug Image" width={35} height={35} />
+                    </button>
+                </Link>
             </div>
         </>
     )

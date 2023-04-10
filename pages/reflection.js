@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/reflection.module.css'
 import ReflectionImg from '../Components/ReflectionImg'
 import ButtonR from '../Components/ButtonR'
+import PrevButton from '../Components/PrevButton'
 
 
 export default function Reflection() {
@@ -15,6 +16,7 @@ export default function Reflection() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <main className={styles.main}>
+        <PrevButton/>
         <h1 className={styles.header}>Reflection</h1>
         <ReflectionImg/>
         <ButtonR/>

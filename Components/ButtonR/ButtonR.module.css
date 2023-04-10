@@ -15,9 +15,10 @@
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
     font-size: 15px;
+    border: none;
+    color: var(--white);
 }
 
 .link {
     text-decoration: none;
-    color: var(--white);
 }
