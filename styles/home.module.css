@@ -1,3 +1,8 @@
+/*Kanit Regular 400 / SemiBold 600 / Bold 700*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap');
+/*Lalezar Regular 400*/
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
 .html {
     margin: 0;
     padding: 0;
