@@ -1,3 +1,6 @@
+/*Kanit Regular 400 / SemiBold 600 / Bold 700*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap');
+
 .container {
     background-color: var(--light-green);
     border-radius: 12px;
@@ -9,10 +12,15 @@
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .description {
     margin-top: -10px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .image {

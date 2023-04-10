@@ -8,15 +8,15 @@ export default function ButtonH() {
         <>
             <div className={styles.container}>
                 <div className={styles.intro}>
-                    <Link href="/reflection">Introduction</Link>
+                    <Link className={styles.link} href="/reflection">Introduction</Link>
                     <Image src="/arrow.png" alt="Drug Image" width={23} height={17} />
                 </div>
                 <div className={styles.quiz}>
-                    <Link href="/quiz">Take a Quiz</Link>
+                    <Link className={styles.link} href="/quiz">Take a Quiz</Link>
                     <Image src="/arrow.png" alt="Drug Image" width={23} height={17} />
                 </div>
-                <div className={styles.resources}>
-                    <Link href="/">Resources</Link>
+                <div className={styles.about}>
+                    <Link className={styles.link} href="/">About Us</Link>
                     <Image src="/arrow.png" alt="Drug Image" width={23} height={17} />
                 </div>
             </div>
