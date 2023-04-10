@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
+
+.main {
+    width: 16.314rem;
+    height: 4.063rem;
+    background-color: #3F9DB7;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.801rem
+}

@@ -1,2 +1,47 @@
 /*Kanit Regular 400 / SemiBold 600 / Bold 700*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap');
+
+.html {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 83vh;
+}
+
+.main h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.main h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #03254C;
+    text-align: center;
+    width: 18.125rem;
+    font-size: 2rem;
+    margin-top: 2.188rem;
+    margin-bottom: 2.188rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.813rem;
+}
+
+.nextButton {
+    text-decoration: none;
+}

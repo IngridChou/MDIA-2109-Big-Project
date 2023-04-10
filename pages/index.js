@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/home.module.css'
 import Card from '../Components/Card'
 import ButtonH from '../Components/ButtonH'
-
+import NavBar from '../Components/NavBar'
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
         <h1 className={styles.header}>DrugMinder</h1>
         <Card/>
         <ButtonH/>
+<NavBar/>
       </main>
     </>
   )
