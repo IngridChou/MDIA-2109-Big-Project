@@ -4,7 +4,7 @@ import FiftyKgOption from '../Components/50kgOption'
 import SixtyKgOption from '../Components/60kgOption'
 import Submit from '../Components/Submit'
 import NavBar from "../Components/NavBar"
-import ProgressBar1 from "../Components/QuizProgressBar1"
+import ProgressBar3 from "../Components/QuizProgressBar/QuizProgressBar3"
 import Link from 'next/link'
 import PrevButton from '../Components/PrevButton'
 
@@ -14,7 +14,7 @@ export default function Weight() {
         <div className={styles.main}>
             <PrevButton/>
             <h2>Step 3 of 3</h2>
-            <ProgressBar1/>
+            <ProgressBar3/>
             <h1>Select your Body Weight</h1>
             <div className={styles.options}>
                 <FortyKgOption/>

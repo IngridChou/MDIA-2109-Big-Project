@@ -4,7 +4,7 @@ import MdmaOption from "../Components/MdmaOption"
 import CocaineOption from "../Components/CocaineOption"
 import Next from "../Components/Next"
 import NavBar from "../Components/NavBar"
-import ProgressBar1 from "../Components/QuizProgressBar1"
+import ProgressBar1 from "../Components/QuizProgressBar/QuizProgressBar1"
 import Link from 'next/link'
 import PrevButton from '../Components/PrevButton'
 
