@@ -17,7 +17,7 @@
 }
 
 .main:hover {
-    background-color: #03254C;
+    background-color: #123a8f;
     transition: 0.15s;
     opacity: 0.9;
 }
@@ -25,4 +25,9 @@
 .selected {
     background-color: #03254C;
     opacity: 0.9;
-  }
+}
+
+.selected:hover {
+    background-color: #03254C;
+    opacity: 0.9;
+}
