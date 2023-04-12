@@ -18,7 +18,7 @@ export default function Home() {
         <h1 className={styles.header}>DrugMinder</h1>
         <Card/>
         <ButtonH/>
-<NavBar/>
+        <NavBar/>
       </main>
     </>
   )
