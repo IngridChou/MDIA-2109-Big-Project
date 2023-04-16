@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/resources.module.css'
 import NavBar from '../Components/NavBar'
+import SearchBar from '../Components/SearchBar'
+import ButtonRes from '../Components/ButtonRes'
 
 export default function Resources() {
     return (
@@ -14,6 +16,8 @@ export default function Resources() {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.header}>Resources</h1>
+        <SearchBar/>
+        <ButtonRes/>
         <NavBar/>
       </main>
     </>

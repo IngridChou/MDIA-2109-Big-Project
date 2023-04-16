@@ -12,7 +12,7 @@ export default function CocaineOption({ selected, onClick }) {
         <>
             <div className={`${styles.main} ${selected ? styles.selected : ''}`}
         onClick={handleClick}>
-                <Image src='/drug-choice/cocaine.png' width={45} height={34}/>
+                <Image src='/drug-choice/cocaine.svg' width={45} height={34}/>
                 <p>Cocaine</p>
             </div>
         </>

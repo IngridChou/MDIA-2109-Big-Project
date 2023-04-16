@@ -12,7 +12,7 @@ export default function MdmaOption({ selected, onClick }) {
         <>
             <div className={`${styles.main} ${selected ? styles.selected : ''}`}
                 onClick={handleClick}>
-                <Image src='/drug-choice/mdma.png' width={47} height={43} />
+                <Image src='/drug-choice/mdma.svg' width={47} height={43} />
                 <p>MDMA</p>
             </div>
         </>
