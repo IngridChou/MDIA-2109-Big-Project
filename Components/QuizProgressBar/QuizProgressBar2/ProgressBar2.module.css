@@ -15,7 +15,7 @@
 .inprogress {
     height: 1.438rem;
     width: 10.875rem;
-    background-color: #F36437;
+    background-color: var(--orange);
     border-radius: 1.25rem 0rem 0rem 1.25rem;
 }
 

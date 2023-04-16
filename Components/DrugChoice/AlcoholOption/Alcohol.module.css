@@ -3,8 +3,8 @@
 .main {
   width: 16.314rem;
   height: 4.063rem;
-  background-color: #3F9DB7;
-  color: white;
+  background-color: var(--cyan);
+  color: var(--white);
   font-family: 'Kanit', sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -23,11 +23,11 @@
 }
 
 .selected {
-  background-color: #03254C;
+  background-color: var(--dark-blue);
   opacity: 0.9;
 }
 
 .selected:hover {
-    background-color: #03254C;
+    background-color: var(--dark-blue);
     opacity: 0.9;
 }

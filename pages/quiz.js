@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import styles from '../styles/quiz.module.css'
 import Image from 'next/image'
-
+import ButtonQ from '../Components/ButtonQ';
 
 
 
 export default function Quiz() {
-    return (
+  return (
 
     <>
       <Head>
@@ -16,15 +16,10 @@ export default function Quiz() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-      <Image src="/boardicon 1.svg" alt="boardicon" width={246} height={246}/>
-    
-
-    <h1 >Quiz</h1>
-
-    <h2>Ready to take quiz for you or a friend?</h2>
-
-
-      
+        <h1 >Quiz</h1>
+        <Image src="/boardicon 1.svg" alt="boardicon" width={246} height={246} />
+        <h2>Ready to take quiz for you or a friend?</h2>
+        <ButtonQ/>
       </main>
     </>
 
@@ -33,5 +28,5 @@ export default function Quiz() {
 
 
 
-)
+  )
 }
