@@ -2,12 +2,11 @@ import Head from 'next/head';
 import styles from '../styles/quiz.module.css'
 import Image from 'next/image'
 import ButtonQ from '../Components/ButtonQ';
-
+import NavBar from '../Components/NavBar';
 
 
 export default function Quiz() {
   return (
-
     <>
       <Head>
         <title>Create Next App</title>
@@ -15,18 +14,13 @@ export default function Quiz() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1 >Quiz</h1>
+      <main className={styles.main}>
+        <h1 className={styles.header}>Quiz</h1>
         <Image src="/boardicon 1.svg" alt="boardicon" width={246} height={246} />
-        <h2>Ready to take quiz for you or a friend?</h2>
+        <h2>Ready to take quiz<br/> for you or a friend?</h2>
         <ButtonQ/>
+        <NavBar/>
       </main>
     </>
-
-
-
-
-
-
   )
 }
