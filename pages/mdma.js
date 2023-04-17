@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/mdma.module.css'
-import PrevButton from '..COmponents/PrevButton'
+import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
 
 export default function Mdma() {
@@ -19,13 +19,13 @@ export default function Mdma() {
             <h1 className={styles.header}>MDMA</h1>
             <Image src="quiz/mdma.png" alt="mdma" width={246} height={246}/>
             <h2 className={styles.subheading}>Description</h2>
-            <p1 clsasName={styles.content}>MDMA is a synthetic drug that affects the mood and<br/>perception by altering neurotransmitters in the <br/>brain like serotonin, dopamine, and norepinephrine.</p1>
+            <p clsasName={styles.content}>MDMA is a synthetic drug that affects the mood and<br/>perception by altering neurotransmitters in the <br/>brain like serotonin, dopamine, and norepinephrine.</p>
 
             <h2 className={styles.subheading}>Effects</h2>
-            <p1 className={styles.content}>Feelings of euphoria, happiness, and increased <br/> sociability <br/>Heightened sensory perception <br/>Increased energy, alertness, and focus</p1>
+            <p className={styles.content}>Feelings of euphoria, happiness, and increased <br/> sociability <br/>Heightened sensory perception <br/>Increased energy, alertness, and focus</p>
 
             <h2 className={styles.subheading}>Precautions</h2>
-         <p1 className={styles.content}>Only take MDMA if you are in good physical and <br/>mental health<br/>Always test your MDMA before taking it <br/> Stay hydrated, but dont drink too much water <br/> Do not drive or operate heavy machinery while under <br/> the influence of MDMA</p1>
+         <p className={styles.content}>Only take MDMA if you are in good physical and <br/>mental health<br/>Always test your MDMA before taking it <br/> Stay hydrated, but dont drink too much water <br/> Do not drive or operate heavy machinery while under <br/> the influence of MDMA</p>
             <NavBar/>
 
 
