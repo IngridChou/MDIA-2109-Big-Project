@@ -2,6 +2,7 @@ import styles from './ButtonR.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
+/**Button for Reflection - I want to learn more */
 export default function ButtonR() {
     return (
         <>

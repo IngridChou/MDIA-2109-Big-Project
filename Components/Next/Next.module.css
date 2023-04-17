@@ -3,8 +3,8 @@
 .main {
     width: 16.314rem;
     height: 4.063rem;
-    background-color: #03254C;
-    color: white;
+    background-color: var(--dark-blue);
+    color: var(--white);
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
@@ -13,4 +13,11 @@
     align-items: center;
     justify-content: space-evenly;
     border-radius: 0.801rem
+}
+
+.main:hover {
+    background-color: var(--orange);
+    transition: 0.15s;
+    opacity: 0.9;
+    scale: 105%;
 }
