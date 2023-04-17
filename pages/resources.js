@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/resources.module.css'
 import NavBar from '../Components/NavBar'
 import ButtonRes from '../Components/ButtonRes'
+import PrevButton from '../Components/PrevButton'
 
 export default function Resources() {
     return (
@@ -14,6 +15,7 @@ export default function Resources() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <main className={styles.main}>
+        <PrevButton/>
         <h1 className={styles.header}>Resources</h1>
         <ButtonRes/>
         <NavBar/>
