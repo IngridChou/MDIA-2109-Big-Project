@@ -20,6 +20,14 @@
     background-color: var(--white);
 }
 
+.main h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 3.125rem;
+}
+
 @media screen and (width: 390px) and (height: 844px) {
     .main{
        
