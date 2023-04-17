@@ -19,15 +19,19 @@ export default function Results() {
                 <h1>Results</h1>
                 <div>
                     <p>Based on your body weight:</p>
-                    <input></input>
+                    <input className={styles.placeholder1}></input>
                 </div>
                 <div>
                     <div><p>and your dosage:</p></div>
-                    <div>
-                        <input></input>
+                    <div className={styles.drugDosage}>
+                        <input className={styles.placeholder2}></input>
                         <p>of</p>
-                        <input></input>
+                        <input className={styles.placeholder2}></input>
                     </div>
+                </div>
+                <div>
+                    <h2>You are at</h2>
+                    <h2>of overdosing</h2>
                 </div>
                <NavBar/>
             </main>

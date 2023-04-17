@@ -25,7 +25,7 @@ export default function Mdma() {
             <p1 className={styles.content}>Feelings of euphoria, happiness, and increased <br/> sociability <br/>Heightened sensory perception <br/>Increased energy, alertness, and focus</p1>
 
             <h2 className={styles.subheading}>Precautions</h2>
-         <p1 className={styles.content}>Only take MDMA if you are in good physical and <br/>mental health<br/>Always test your MDMA before taking it </br> Stay hydrated, but dont drink too much water <br/> Do not drive or operate heavy machinery while under <br/> the influence of MDMA</p1>
+         <p1 className={styles.content}>Only take MDMA if you are in good physical and <br/>mental health<br/>Always test your MDMA before taking it <br/> Stay hydrated, but dont drink too much water <br/> Do not drive or operate heavy machinery while under <br/> the influence of MDMA</p1>
             <NavBar/>
 
 
