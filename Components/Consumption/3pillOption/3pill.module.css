@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
+
+.main {
+    width: 16.314rem;
+    height: 4.063rem;
+    background-color: var(--cyan);
+    color: var(--white);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.801rem
+}
+
+.main:hover {
+    background-color: #123a8f;
+    transition: 0.15s;
+    opacity: 0.9;
+}
+
+.selected {
+    background-color: var(--dark-blue);
+    opacity: 0.9;
+}
+
+.selected:hover {
+    background-color: var(--dark-blue);
+    opacity: 0.9;
+}

@@ -1,0 +1,62 @@
+/*Kanit Regular 400 / SemiBold 600 / Bold 700*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap');
+/*Lalezar Regular 400*/
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+.html {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 83vh;
+}
+
+.header {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 3.125rem;
+    margin-top: 2.188rem;
+    margin-bottom: 2.188rem;
+}
+
+.allprofiles {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 2.5rem;
+
+}
+
+.profiles {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.125rem;
+    margin-bottom: 0;
+    margin-top: 0rem;
+    text-align: left;
+    color: var(--dark-blue);
+}
+
+.main p {
+    width: 18.125rem;
+    margin-top: 0.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
