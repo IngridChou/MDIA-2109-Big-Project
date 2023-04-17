@@ -28,9 +28,6 @@ export default function Alcohol() {
          <p className={styles.content}>Only consume alcohol if you are in good physical and <br/>mental health <br/> Avoid mixing alcohol with medications <br/> Stay hydrated, and make sure to eat before <br/> consuming alcohol <br/> Do not drive or operate heavy machinery while under <br/> the influence of alcohol</p>
             <NavBar/>
 
-
-
-
           </main>
           </>
     )
