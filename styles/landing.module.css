@@ -47,7 +47,7 @@
   }
 
 .header {
-    font-family: 'Lalezar', cursive;
+    font-family: 'Lalezar';
     font-weight: 400;
     font-size: 50px;
     color: var(--black);
