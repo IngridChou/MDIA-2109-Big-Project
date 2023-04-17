@@ -36,3 +36,11 @@
     text-align: left;
     color: var(--dark-blue);
 }
+
+@media screen and (width: 390px) and (height: 844px) {
+    .main{
+       
+    }
+  }
+  
+
