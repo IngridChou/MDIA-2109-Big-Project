@@ -6,8 +6,6 @@ import NavBar from '../Components/NavBar'
 
 export default function Alcoholinfo() {
     return (
-<<<<<<< HEAD
-
         <>
         <Head>
         <title>DrugMinder</title>
@@ -16,10 +14,6 @@ export default function Alcoholinfo() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <main className={styles.main}>
-=======
-           
->>>>>>> f7ae4a4e2e83186cbfee1aff324dd8fb9cd9b17d
-
 
         </main>
 
