@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/alcohol.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
+import MoreInfo from '../Components/MoreInfo'
 
 export default function Alcohol() {
     return (
@@ -26,6 +27,7 @@ export default function Alcohol() {
 
             <h2 className={styles.subheading}>Precautions</h2>
          <p className={styles.content}>&#x2022; Only consume alcohol if you are in good physical and <br/>mental health <br/>&#x2022; Avoid mixing alcohol with medications <br/>&#x2022; Stay hydrated, and make sure to eat before <br/> consuming alcohol <br/>&#x2022; Do not drive or operate heavy machinery while under <br/> the influence of alcohol</p>
+         <MoreInfo/>
             <NavBar/>
 
 
