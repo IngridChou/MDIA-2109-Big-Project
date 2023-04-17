@@ -11,7 +11,7 @@ export default function NavBar() {
                 <Link href='/quiz'>
                     <Image src="/quiz-icon.png" width={36} height={36} />
                 </Link>
-                <Link href='/'>
+                <Link href='/home'>
                     <Image src="/home.png" width={36} height={36} />
                 </Link>
                 <Link href='/resources'>

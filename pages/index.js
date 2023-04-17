@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/home.module.css'
-import Card from '../Components/Card'
-import ButtonH from '../Components/ButtonH'
-import NavBar from '../Components/NavBar'
+import styles from '../styles/landing.module.css'
+import ButtonL from '../Components/ButtonL'
 
-export default function Home() {
+
+export default function Landing() {
   return (
     <>
       <Head>
@@ -15,10 +14,14 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.header}>DrugMinder</h1>
-        <Card/>
-        <ButtonH/>
-        <NavBar/>
+        <div className={styles.topContainer}>
+        <Image src="/logo.svg" alt="Drug Image" width={135} height={135}/>
+        <div className={styles.textContainer}>
+          <h1 className={styles.header}>DrugMinder</h1>
+          <p className={styles.slogan}>An app of medication management, education, and empowerment.</p>
+        </div>
+        </div>
+        <ButtonL/>
       </main>
     </>
   )
