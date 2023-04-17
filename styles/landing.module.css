@@ -27,6 +27,7 @@
 .topContainer {
     position: relative;
     top: 75px;
+    animation: fadeInAnimation 0.5s ease-in;
 }
 
 .textContainer {
@@ -35,6 +36,15 @@
     color: var(--grey);
     line-height: 20px;
 }
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 .header {
     font-family: 'Lalezar', cursive;
