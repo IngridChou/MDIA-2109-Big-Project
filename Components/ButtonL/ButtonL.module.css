@@ -18,3 +18,10 @@
 .link {
     text-decoration: none;
 }
+
+.button:hover {
+    background-color: var(--dark-blue);
+    transition: 0.15s;
+    opacity: 0.9;
+    scale: 105%;
+}

@@ -64,3 +64,20 @@
 .link {
     text-decoration: none;
 }
+
+.intro:hover {
+    transition: 0.15s;
+    scale: 103%;
+}
+
+
+.quiz:hover {
+    transition: 0.15s;
+    scale: 103%;
+}
+
+
+.about:hover {
+    transition: 0.15s;
+    scale: 103%;
+}

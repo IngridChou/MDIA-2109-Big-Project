@@ -29,3 +29,37 @@
 .header {
     font-size: 50px;
 }
+
+.clipboard {
+    animation-name: shake;  
+    animation-duration: 2.5s;      
+    animation-iteration-count: infinite;  
+    display: inline-block;
+  }
+ 
+  @keyframes shake {
+      0% {
+         transform: rotate( 0.0deg)
+        }
+     10% {
+        transform: rotate(3.0deg) scale(103%)
+    }  
+     20% {
+        transform: rotate(-3.0deg) scale(103%)
+    }
+     30% {
+        transform: rotate(3.0deg) scale(103%)
+    }
+     40% {
+         transform: rotate(0deg) scale(103%)
+        }
+     50% {
+        transform: rotate(3.0deg) scale(103%)
+    }
+     60% {
+        transform: rotate( 0.0deg) scale(100%)
+    }  
+    100% {
+        transform: rotate( 0.0deg) scale(100%)
+    }
+  }
