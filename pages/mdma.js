@@ -27,7 +27,8 @@ export default function Mdma() {
 
             <h2 className={styles.subheading}>Precautions</h2>
          <p className={styles.content}>&#x2022; Only take MDMA if you are in good physical and <br/>mental health<br/>&#x2022; Always test your MDMA before taking it <br/>&#x2022; Stay hydrated, but dont drink too much water <br/>&#x2022; Do not drive or operate heavy machinery while under <br/> the influence of MDMA</p>
-            <NavBar/>
+              <MoreInfo/>
+                <NavBar/>
 
 
 
