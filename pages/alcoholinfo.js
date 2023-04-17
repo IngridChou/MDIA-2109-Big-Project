@@ -17,8 +17,7 @@ export default function Alcoholinfo() {
       </Head>
       <main className={styles.main}>
 =======
-            <>
-            </>
+           
 >>>>>>> f7ae4a4e2e83186cbfee1aff324dd8fb9cd9b17d
 
 
