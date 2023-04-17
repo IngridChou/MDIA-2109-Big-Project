@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/cocaineinfo.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
-import MoreInfo from '../Components/Moreinfo'
+import MoreInfo from '../Components/MoreInfo'
 
 export default function Cocaineinfo() {
     return (
