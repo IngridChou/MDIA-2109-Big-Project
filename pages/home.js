@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/reflection.module.css'
-import ReflectionImg from '../Components/ReflectionImg'
-import ButtonR from '../Components/ButtonR'
-import PrevButton from '../Components/PrevButton'
+import styles from '../styles/home.module.css'
+import Card from '../Components/Card'
+import ButtonH from '../Components/ButtonH'
+import NavBar from '../Components/NavBar'
 
-
-export default function Reflection() {
+export default function Home() {
   return (
     <>
       <Head>
@@ -16,10 +15,10 @@ export default function Reflection() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <main className={styles.main}>
-        <PrevButton/>
-        <h1 className={styles.header}>Introduction</h1>
-        <ReflectionImg/>
-        <ButtonR/>
+        <h1 className={styles.header}>DrugMinder</h1>
+        <Card/>
+        <ButtonH/>
+        <NavBar/>
       </main>
     </>
   )
