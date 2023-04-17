@@ -17,7 +17,7 @@ export default function Alcohol() {
             <PrevButton/>
 
             <h1 className={styles.header}>Alcohol</h1>
-            <Image src="quiz/alcohol.png" alt="alcohol" width={246} height={246}/>
+            <Image src="/alcohol.png" alt="alcohol" width={246} height={246}/>
             <h2 className={styles.subheading}>Description</h2>
             <p clsasName={styles.content}>Alcohol is a widely used psychoactive substance<br/>that is consumed for its intoxicating effects. It is a <br/>depressant that affects the central nervous system.</p>
 
