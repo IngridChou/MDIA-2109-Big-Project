@@ -6,8 +6,8 @@ export default function ProgressBar3() {
         <>
         <div className={styles.main}>
             <div className={styles.inprogress} />
-            {/* <div className={styles.mainbar}/> */}
-                {/* <div className={styles.section} /> */}
+            {<div className={styles.mainbar}/>}
+                <div className={styles.section} />
             </div>
         </>
     )
