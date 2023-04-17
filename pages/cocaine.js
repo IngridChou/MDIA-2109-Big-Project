@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/cocaine.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
+import MoreInfo from '../Components/MoreInfo'
 
 export default function Cocaine() {
   return (
@@ -26,6 +27,7 @@ export default function Cocaine() {
 
         <h2 className={styles.subheading}>Precautions</h2>
         <p className={styles.content}>&#x2022; Only take cocaine if you are in good physical and <br />mental health<br />&#x2022; Always test your cocaine before taking it <br />&#x2022; Stay hydrated, but dont drink too much water <br />&#x2022; Do not drive or operate heavy machinery while under <br /> the influence of cocaine</p>
+        <MoreInfo/>
         <NavBar />
         </main>
         </>
