@@ -28,6 +28,6 @@
 }
 
 .selected:hover {
-    background-color: var(--dark-blue)C;
+    background-color: var(--dark-blue);
     opacity: 0.9;
 }

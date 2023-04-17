@@ -3,6 +3,7 @@ import styles from '../styles/quiz.module.css'
 import Image from 'next/image'
 import ButtonQ from '../Components/ButtonQ';
 import NavBar from '../Components/NavBar';
+import PrevButton from '../Components/PrevButton';
 
 
 export default function Quiz() {
@@ -15,6 +16,7 @@ export default function Quiz() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <PrevButton/>
         <h1 className={styles.header}>Quiz</h1>
         <Image src="/boardicon 1.svg" alt="boardicon" width={246} height={246} />
         <h2>Ready to take quiz<br/> for you or a friend?</h2>
