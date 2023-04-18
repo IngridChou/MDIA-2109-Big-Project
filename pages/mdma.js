@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/mdma.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
+import MoreInfo from '../Components/MoreInfo'
 
 export default function Mdma() {
     return (
