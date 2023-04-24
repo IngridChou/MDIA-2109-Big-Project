@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import Question from "../Question";
+import styles from "./Quiz.module.css";
+import Image from "next/image";
 
 export default function Quiz() {
     const [questions, setQuestions] = useState([
@@ -53,6 +55,10 @@ export default function Quiz() {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
     };
 
+    const handlePrev = () => {
+        setCurrentQuestionIndex(currentQuestionIndex - 1);
+    }
+
     const userResults = useMemo(() => {
         if (userAnswers.length < 3) {
             return [];
@@ -80,8 +86,14 @@ export default function Quiz() {
             ) : (
                 <div>
                     <h1>Step {currentQuestionIndex + 1}</h1>
+                    <div className={styles.progressBar} style={{ width: `${(currentQuestionIndex + 1) / questions.length * 100}%` }} />
                     <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} />
                     <button onClick={handleNext}>Next</button>
+                    {currentQuestionIndex > 0 && (
+                        <button className={styles.prevButton} onClick={handlePrev}>
+                            <Image src="/backArrow.svg" alt="Previous Button" width={25} height={25} />
+                        </button>
+                    )}
                 </div>
             )}
         </>
