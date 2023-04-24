@@ -100,16 +100,18 @@ export default function Quiz() {
                     <button className={styles.button} onClick={handleRetakeQuiz}>Retake Quiz</button>
                 </>
             ) : (
-                <div className={styles.page}>
+                <div>
                     <h1 className={styles.progress}>Step {currentQuestionIndex + 1} of 3</h1>
                     <div className={styles.progressBar} style={{ width: `${(currentQuestionIndex + 1) / questions.length * 100}%` }} />
                     <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} />
+                    <div className={styles.page}>
                     <button className={styles.nextbutton} onClick={handleNext}>Next</button>
                     {currentQuestionIndex > 0 && (
                         <button className={styles.prevButton} onClick={handlePrev}>
                             <Image src="/backArrow.svg" alt="Previous Button" width={25} height={25} />
                         </button>
                     )}
+                    </div>
                 </div>
             )}
         </>
