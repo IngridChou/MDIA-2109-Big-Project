@@ -61,3 +61,18 @@
 .link {
     text-decoration: none;
 }
+
+.alcohol:hover {
+    scale: 105%;
+    transition: 0.15s;
+}
+
+.cocaine:hover {
+    scale: 105%;
+    transition: 0.15s;
+}
+
+.mdma:hover {
+    scale: 105%;
+    transition: 0.15s;
+}
