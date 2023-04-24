@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/mdma.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
-import MoreInfo from '../Components/MoreInfo'
+import MoreInfoM from '../Components/MoreInfoM'
 
 export default function Mdma() {
     return (
@@ -22,13 +22,13 @@ export default function Mdma() {
             <h2 className={styles.subheading}>Description</h2>
             
             <p clsasName={styles.content}>MDMA is a synthetic drug that affects the mood and<br/>perception by altering neurotransmitters in the <br/>brain like serotonin, dopamine, and norepinephrine.</p>
-
+            <p3>___________________________________________</p3> 
             <h2 className={styles.subheading}>Effects</h2>
             <p className={styles.content}>&#x2022; Feelings of euphoria, happiness, and increased <br/> sociability <br/>&#x2022; Heightened sensory perception <br/>&#x2022; Increased energy, alertness, and focus</p>
-
+            <p3>___________________________________________</p3> 
             <h2 className={styles.subheading}>Precautions</h2>
          <p className={styles.content}>&#x2022; Only take MDMA if you are in good physical and <br/>mental health<br/>&#x2022; Always test your MDMA before taking it <br/>&#x2022; Stay hydrated, but dont drink too much water <br/>&#x2022; Do not drive or operate heavy machinery while under <br/> the influence of MDMA</p>
-              <MoreInfo/>
+      
                 <NavBar/>
 
 
