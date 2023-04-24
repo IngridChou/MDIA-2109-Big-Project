@@ -59,6 +59,11 @@ export default function Quiz() {
         setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
 
+    const handleRetakeQuiz = () => {
+        setUserAnswers([]);
+        setCurrentQuestionIndex(0);
+    }
+
     const userResults = useMemo(() => {
         if (userAnswers.length < 3) {
             return [];
@@ -82,6 +87,7 @@ export default function Quiz() {
                     <input type="text" readOnly value={userResults[1]} />
                     <p>of</p>
                     <input type="text" readOnly value={userResults[0]} />
+                    <button onClick={handleRetakeQuiz}>Retake Quiz</button>
                 </>
             ) : (
                 <div>
