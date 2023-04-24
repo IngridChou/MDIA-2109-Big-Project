@@ -8,7 +8,7 @@ export default function NavBar() {
     return (
         <>
             <div className={styles.main}>
-                <Link href='/quiz'>
+                <Link href='/quizLanding'>
                     <Image src="/quiz-icon.png" width={36} height={36} />
                 </Link>
                 <Link href='/home'>

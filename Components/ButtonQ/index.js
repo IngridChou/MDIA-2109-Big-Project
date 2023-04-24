@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function ButtonQ() {
     return (
         <>
-            <Link className={styles.link} href="/drug-choice">
+            <Link className={styles.link} href="/quiz">
                 <button className={styles.button}>Start Quiz
                     <Image src="/arrow.svg" alt="Arrow" width={35} height={35} />
                 </button>
