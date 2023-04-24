@@ -19,14 +19,13 @@ export default function Alcohol() {
 
             <h1 className={styles.header}>Alcohol</h1>
             <Image src="/alcohol.png" alt="alcohol" width={246} height={246}/>
-            <h2 className={styles.subheading}>Description</h2>
             <p clsasName={styles.content}>Alcohol is a widely used psychoactive substance<br/>that is consumed for its intoxicating effects. It is a <br/>depressant that affects the central nervous system.</p>
-            <p3>___________________________________________</p3> 
+            <hr/>
             <h2 className={styles.subheading}>Effects</h2>
-            <p className={styles.content}>&#x2022; Feelings of pleasure, relaxation, and increased <br/> heartbeat <br/>&#x2022; Slow reaction time and impaired coordination <br/>Reduced inhibitions, leading to risky behavior<br/>&#x2022; Headaches, dehydration, and impaired memory </p>
-            <p3>___________________________________________</p3> 
+            <p className={styles.content}> Feelings of pleasure, relaxation, and increased <br/> heartbeat <br/>Slow reaction time and impaired coordination <br/>Reduced inhibitions, leading to risky behavior<br/>Headaches, dehydration, and impaired memory </p>
+            <hr/>
             <h2 className={styles.subheading}>Precautions</h2>
-         <p className={styles.content}>&#x2022; Only consume alcohol if you are in good physical and <br/>mental health <br/>&#x2022; Avoid mixing alcohol with medications <br/>&#x2022; Stay hydrated, and make sure to eat before <br/> consuming alcohol <br/>&#x2022; Do not drive or operate heavy machinery while under <br/> the influence of alcohol</p>
+         <p className={styles.content}>Only consume alcohol if you are in good physical and <br/>mental health <br/>Avoid mixing alcohol with medications <br/>Stay hydrated, and make sure to eat before <br/> consuming alcohol <br/>Do not drive or operate heavy machinery while under <br/> the influence of alcohol</p>
          <MoreInfoA/>
             <NavBar/>
 

@@ -18,6 +18,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 83vh;
+    font-family: 'Kanit', sans-serif;
 }
 
 .main h1 {
@@ -44,9 +45,9 @@
   }
   
 
-.main p3 {
-    color:  #ccc;
-   
+  .main hr {
+    border-top: 0.1rem solid #ccc;
+    width: 20.314rem;
 }
 
 .main p {

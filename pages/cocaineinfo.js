@@ -22,10 +22,10 @@ export default function Cocaineinfo() {
         <h3 className={styles.header}>Statistics</h3>
         <Image src="/cocainestats.png" alt="mdma" width={246} height={246} />
         <h2 className={styles.subheading}>Description</h2>
-        <p clsasName={styles.content}>Cocaine is a highly addictive stimulant drug that is<br />derived from the leaves of the coca plant. Cocaine <br />works by blocking the reabsorption of dopamine</p>
+        <p clasName={styles.content}>Cocaine is a highly addictive stimulant drug that is<br />derived from the leaves of the coca plant. Cocaine <br />works by blocking the reabsorption of dopamine</p>
 
         <h2 className={styles.subheading}>Get Help</h2>
-        <p className={styles.content}>&#x2022; https://www.wellnesstogether.ca/en-CA <br /> https://www.drugrehab.ca/ <br />&#x2022; https://canaacna.org/ </p>
+        <p className={styles.content}>https://www.wellnesstogether.ca/en-CA <br /> https://www.drugrehab.ca/ <br />https://canaacna.org/ </p>
         <NavBar />
         </main>
 </>
