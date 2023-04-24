@@ -13,7 +13,6 @@ export default function Questions() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.header}>Step</h1>
         <Quiz/>
       </main>
     </>

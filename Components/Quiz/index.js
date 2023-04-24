@@ -33,11 +33,23 @@ export default function Quiz() {
     ]);
     const [userAnswers, setUserAnswers] = useState([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
+
 
     const handleAnswer = (answerId) => {
-        const updatedAnswers = [...userAnswers];
-        updatedAnswers[currentQuestionIndex] = answerId;
-        setUserAnswers(updatedAnswers);
+        setSelectedAnswer(answerId);
+    };
+
+    const handleNext = () => {
+        if (selectedAnswer === null) {
+            // If no answer is selected, show an alert
+            alert('Please select an answer');
+            return;
+        }
+
+        // If an answer is selected, update the state with the answer and move to the next question
+        setUserAnswers([...userAnswers, selectedAnswer]);
+        setSelectedAnswer(null);
         setCurrentQuestionIndex(currentQuestionIndex + 1);
     };
 
@@ -59,14 +71,18 @@ export default function Quiz() {
                 <>
                     <h2>Your Result:</h2>
                     <p>Based on your body weight:</p>
-                    <input type="text" readOnly value={userResults[2]}/>
+                    <input type="text" readOnly value={userResults[2]} />
                     <p>And your Dosage:</p>
-                    <input type="text" readOnly value={userResults[1]}/>
+                    <input type="text" readOnly value={userResults[1]} />
                     <p>of</p>
-                    <input type="text" readOnly value={userResults[0]}/>
+                    <input type="text" readOnly value={userResults[0]} />
                 </>
             ) : (
-                <Question question={questions[currentQuestionIndex]} onAnswer={(answerId) => handleAnswer(answerId)} />
+                <div>
+                    <h1>Step {currentQuestionIndex + 1}</h1>
+                    <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} />
+                    <button onClick={handleNext}>Next</button>
+                </div>
             )}
         </>
     );
