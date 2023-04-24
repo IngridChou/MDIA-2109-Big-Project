@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/home.module.css'
 import Quiz from '../Components/Quiz'
 import PrevButton from '../Components/PrevButton'
+import NavBar from '../Components/NavBar'
 
 export default function QuizP() {
   return (
@@ -16,6 +16,7 @@ export default function QuizP() {
       <main className={styles.main}>
         <PrevButton/>
         <Quiz/>
+        <NavBar/>
       </main>
     </>
   )
