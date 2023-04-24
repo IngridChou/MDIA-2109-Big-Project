@@ -9,13 +9,13 @@ export default function NavBar() {
         <>
             <div className={styles.main}>
                 <Link href='/quizLanding'>
-                    <Image src="/quiz-icon.png" width={36} height={36} />
+                    <Image src="/quiz-icon.svg" width={36} height={36} />
                 </Link>
                 <Link href='/home'>
-                    <Image src="/home.png" width={36} height={36} />
+                    <Image src="/home.svg" width={36} height={36} />
                 </Link>
                 <Link href='/resources'>
-                    <Image src="/info-icon.png" width={36} height={36} />
+                    <Image src="/info-icon.svg" width={36} height={36} />
                 </Link>
             </div>
         </>
