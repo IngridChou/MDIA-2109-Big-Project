@@ -19,7 +19,7 @@ export default function Cocaineinfo() {
         <PrevButton />
 
         <h1 className={styles.header}>More Info</h1>
-        <h3 className={styles.header}>Statistics</h3>
+        <h2 className={styles.header}>Statistics</h2>
         <Image src="/cocainestats.png" alt="mdma" width={246} height={246} />
         <h2 className={styles.subheading}>Description</h2>
         <p clasName={styles.content}>Cocaine is a highly addictive stimulant drug that is<br />derived from the leaves of the coca plant. Cocaine <br />works by blocking the reabsorption of dopamine</p>
