@@ -1,11 +1,11 @@
-
+import styles from "./Question.module.css";
 
 export default function Question({ question, onAnswer }) {
     return (
-      <div>
-        <h2>{question.question}</h2>
+      <div className={styles.alloptions}>
+        <h2 className={styles.title}>{question.question}</h2>
         {question.answers.map((answer, index) => (
-          <button key={index} onClick={() => onAnswer(answer.id)}>
+          <button className={styles.options} key={index} onClick={() => onAnswer(answer.id)}>
             {answer.text}
           </button>
         ))}

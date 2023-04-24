@@ -16,6 +16,10 @@ export default function About() {
       <main className={styles.main}>
         <PrevButton/>
         <h1 className={styles.header}>About Us</h1>
+        <div classNames={styles.about}>
+          <Image src='full-logo.svg' width={300} height={60}/>
+          <p>DrugMinder is a free mobile app that allows users to test for overdosing on cocaine, MDMA, and alcohol. It also provides information for users to learn more about the drugs, including recommended dosages, symptoms of overdosing, and precautions.</p>
+        </div>
         <div className={styles.allprofiles}>
         <div className={styles.profiles}>
           <Image src='/profile.svg' width={175} height={175 }/>
