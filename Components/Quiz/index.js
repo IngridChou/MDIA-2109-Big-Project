@@ -9,27 +9,27 @@ export default function Quiz() {
             id: 1,
             question: "Select a substance to test for",
             answers: [
-                { id: 1, text: "Alcohol", result: "Alcohol" },
-                { id: 2, text: "MDMA", result: "MDMA" },
-                { id: 3, text: "Cocaine", result: "Cocaine" },
+                { id: 1, text: "Alcohol", result: "Alcohol", className: styles.answer },
+                { id: 2, text: "MDMA", result: "MDMA", className: styles.answer },
+                { id: 3, text: "Cocaine", result: "Cocaine", className: styles.answer },
             ],
         },
         {
             id: 2,
-            question: "MDMA",
+            question: "Select Your Dosage of MDMA",
             answers: [
-                { id: 1, text: "0.1g(1 pill)", result: "0.1g(1 pill)" },
-                { id: 2, text: "0.2g(2 pills)", result: "0.2g(2 pills)" },
-                { id: 3, text: "0.3g(3 pills)", result: "0.3g(3 pills)" },
+                { id: 1, text: "0.1g (1 pill)", result: "0.1g (1 pill)", className: "answer" },
+                { id: 2, text: "0.2g (2 pills)", result: "0.2g (2 pills)", className: "answer" },
+                { id: 3, text: "0.3g (3 pills)", result: "0.3g (3 pills)", className: "answer" },
             ],
         },
         {
             id: 3,
-            question: "Body Weight",
+            question: "Select Your Body Weight",
             answers: [
-                { id: 1, text: "40~50kg", result: "40~50kg" },
-                { id: 2, text: "50~60kg", result: "50~60kg" },
-                { id: 3, text: "60~70kg", result: "60~70kg" },
+                { id: 1, text: "40~50 kg", result: "40~50 kg", className: "answer" },
+                { id: 2, text: "50~60 kg", result: "50~60 kg", className: "answer" },
+                { id: 3, text: "60~70 kg", result: "60~70 kg", className: "answer" },
             ],
         },
     ]);
@@ -80,21 +80,31 @@ export default function Quiz() {
         <>
             {userAnswers.length === 3 ? (
                 <>
-                    <h2>Your Result:</h2>
-                    <p>Based on your body weight:</p>
-                    <input type="text" readOnly value={userResults[2]} />
-                    <p>And your Dosage:</p>
-                    <input type="text" readOnly value={userResults[1]} />
-                    <p>of</p>
-                    <input type="text" readOnly value={userResults[0]} />
-                    <button onClick={handleRetakeQuiz}>Retake Quiz</button>
+                    <h2 className={styles.title}>Your Result:</h2>
+                    <div className={styles.resultpt1}>
+                        <p>Based on your body weight:</p>
+                        <input className={styles.resultinput} type="text" readOnly value={userResults[2]} />
+                    </div>
+                    <div>
+                        <div className={styles.resultpt2}>
+                            <p>And your Dosage:</p>
+                        </div>
+                        <div className={styles.resultpt3}>
+                            <input className={styles.resultinput} type="text" readOnly value={userResults[1]} />
+                            <p className={styles.of}>of</p>
+                            <input className={styles.resultinput} type="text" readOnly value={userResults[0]} />
+                        </div>
+                    </div>
+
+
+                    <button className={styles.button} onClick={handleRetakeQuiz}>Retake Quiz</button>
                 </>
             ) : (
                 <div>
-                    <h1>Step {currentQuestionIndex + 1}</h1>
+                    <h1 className={styles.progress}>Step {currentQuestionIndex + 1} of 3</h1>
                     <div className={styles.progressBar} style={{ width: `${(currentQuestionIndex + 1) / questions.length * 100}%` }} />
                     <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} />
-                    <button onClick={handleNext}>Next</button>
+                    <button className={styles.nextbutton} onClick={handleNext}>Next</button>
                     {currentQuestionIndex > 0 && (
                         <button className={styles.prevButton} onClick={handlePrev}>
                             <Image src="/backArrow.svg" alt="Previous Button" width={25} height={25} />
