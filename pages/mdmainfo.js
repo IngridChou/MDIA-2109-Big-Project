@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/mdmainfo.module.css'
 import PrevButton from '../Components/PrevButton'
+import NavBar from "../Components/NavBar"
 
 
 export default function Mdmainfo() {
