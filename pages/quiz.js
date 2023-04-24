@@ -4,7 +4,7 @@ import styles from '../styles/home.module.css'
 import Quiz from '../Components/Quiz'
 import PrevButton from '../Components/PrevButton'
 
-export default function Quiz() {
+export default function QuizP() {
   return (
     <>
       <Head>
