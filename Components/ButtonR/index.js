@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function ButtonR() {
     return (
         <>
-            <Link className={styles.link} href="/quiz">
+            <Link className={styles.link} href="/quizLanding">
                 <button className={styles.button}>I want to learn more
                     <Image src="/arrow.svg" alt="Arrow" width={35} height={35} />
                 </button>
