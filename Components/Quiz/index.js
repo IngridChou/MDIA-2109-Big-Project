@@ -100,7 +100,7 @@ export default function Quiz() {
                     <button className={styles.button} onClick={handleRetakeQuiz}>Retake Quiz</button>
                 </>
             ) : (
-                <div>
+                <div className={styles.page}>
                     <h1 className={styles.progress}>Step {currentQuestionIndex + 1} of 3</h1>
                     <div className={styles.progressBar} style={{ width: `${(currentQuestionIndex + 1) / questions.length * 100}%` }} />
                     <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} />
