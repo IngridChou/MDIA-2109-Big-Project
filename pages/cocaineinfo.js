@@ -4,6 +4,7 @@ import styles from '../styles/cocaineinfo.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
 import MoreInfo from '../Components/MoreInfo'
+import GraphM from '../Components/GraphM'
 
 export default function Cocaineinfo() {
     return (
@@ -20,7 +21,7 @@ export default function Cocaineinfo() {
 
         <h1 className={styles.header}>More Info</h1>
 
-        <Image src="/cocainestats.png" alt="mdma" width={246} height={246} />
+     <GraphM/>
          <h2 className={styles.header}>Statistics</h2>
          <p clsasName={styles.content}>&#8226;The global cocaine market is estimated to be a <br />100 billion dollars per year<br />&#8226;The use of cocaine is more prevalent among<br /> young adults (18-24) <br />&#8226;Prevalance of cocaine was 2.0% among<br /> people living in Canada</p>
         <hr />
