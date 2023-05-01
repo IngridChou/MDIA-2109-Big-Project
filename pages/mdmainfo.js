@@ -17,17 +17,17 @@ export default function Mdmainfo() {
       <main className={styles.main}>
         <PrevButton />
 
-        <h1 className={styles.header}>Cocaine</h1>
+        <h1 className={styles.header}>More Info</h1>
         <Image src="/mdmastats.png" alt="mdmainfo" width={246} height={246} />
-        <h2 className={styles.subheading}>Description</h2>
-        <p clsasName={styles.content}>Cocaine is a highly addictive stimulant drug that is<br />derived from the leaves of the coca plant. Cocaine <br />works by blocking the reabsorption of dopamine</p>
+        <h2 className={styles.subheading}>Statistics</h2>
+        <p clsasName={styles.content}>&#8226;1.7% of Canadians aged 15 years or older reported<br /> using MDMA in the past year<br />&#8226;The RCMP seized 18,000 tablets of MDMA in <br />Canada <br />&#8226;25% of users reported mixing alcohol and MDMA<br /> together</p>
 
-        <h2 className={styles.subheading}>Effects</h2>
-        <p className={styles.content}>&#x2022; Feelings of euphoria, happiness, and increased <br /> heartbeat <br />&#x2022; Pupils of the eyes dilate, making them larger <br />than normal <br />&#x2022; Cocaine makes it difficult to sleep, leading to <br />insomnia</p>
+        <h2 className={styles.subheading}>Seek Help</h2>
+        <p className={styles.content}>https://www.wellnesstogether.ca/en-CA <br /> https://www.drugrehab.ca/ <br />https://canaacna.org/</p>
 
-        <h2 className={styles.subheading}>Precautions</h2>
-        <p className={styles.content}>&#x2022; Only take cocaine if you are in good physical and <br />mental health<br />&#x2022; Always test your cocaine before taking it <br />&#x2022; Stay hydrated, but dont drink too much water <br />&#x2022; Do not drive or operate heavy machinery while under <br /> the influence of cocaine</p>
+        <h2 className={styles.subheading}>Resources</h2>
         
+        <a href="https://ccsa.ca/sites/default/files/2022-10/CCSA-MDMA-Ecstasy-Drug-Summary-2022-en.pdf">https://ccsa.ca/</a>
         <NavBar />  
         </main>
         </>
