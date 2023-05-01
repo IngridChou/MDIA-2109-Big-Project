@@ -6,24 +6,24 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    margin-top: 35px;
+    gap: 2.188rem;
+    margin-top: 2.188rem;
 }
 
 .intro {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 100px;
+    gap: 6.25rem;
     align-items: center;
-    width: 300px;
-    height: 60px;
-    border-radius: 12px;
+    width: 18.75rem;
+    height: 3.75rem;
+    border-radius: 0.75rem;
     background-color: var(--orange);
     border: none;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 16pt;
     color: var(--white);
 }
 
@@ -31,16 +31,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 110px;
+    gap: 6.875rem;
     align-items: center;
-    width: 300px;
-    height: 60px;
-    border-radius: 12px;
+    width: 18.75rem;
+    height: 3.75rem;
+    border-radius: 0.75rem;
     border: none;
     background-color: var(--cyan);
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 16pt;
     color: var(--white);
 }
 
@@ -57,7 +57,7 @@
     background-color: var(--light-blue);
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 16pt;
     color: var(--white);
 }
 

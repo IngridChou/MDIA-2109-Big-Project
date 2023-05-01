@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import Question from "../Question";
 import styles from "./Quiz.module.css";
 import Image from "next/image";
-import HighRisk from "../highRisk";
+import HighRisk from "../HighRisk";
 import MedRisk from "../MedRisk";
 import LowRisk from "../LowRisk";
 import ButtonQR from "../ButtonQR";
@@ -13,27 +13,27 @@ export default function Quiz() {
             id: 1,
             question: "Select a substance to test for",
             answers: [
-                { id: 1, text: "Alcohol", result: "Alcohol", className: styles.answer },
-                { id: 2, text: "MDMA", result: "MDMA", className: styles.answer },
-                { id: 3, text: "Cocaine", result: "Cocaine", className: styles.answer },
+                { id: 1, text: "Alcohol", result: "Alcohol"},
+                { id: 2, text: "MDMA", result: "MDMA"},
+                { id: 3, text: "Cocaine", result: "Cocaine"},
             ],
         },
         {
             id: 2,
-            question: "Select Your Dosage of MDMA",
+            question: "Select Your Dosage of drug",
             answers: [
-                { id: 1, text: "0.1g (1 pill)", result: "0.1g (1 pill)", className: "answer" },
-                { id: 2, text: "0.2g (2 pills)", result: "0.2g (2 pills)", className: "answer" },
-                { id: 3, text: "0.3g (3 pills)", result: "0.3g (3 pills)", className: "answer" },
+                { id: 1, text: "0.1g (1 pill)", result: "0.1g (1 pill)"},
+                { id: 2, text: "0.2g (2 pills)", result: "0.2g (2 pills)"},
+                { id: 3, text: "0.3g (3 pills)", result: "0.3g (3 pills)"},
             ],
         },
         {
             id: 3,
             question: "Select Your Body Weight",
             answers: [
-                { id: 1, text: "40~50 kg", result: "40~50 kg", className: "answer" },
-                { id: 2, text: "50~60 kg", result: "50~60 kg", className: "answer" },
-                { id: 3, text: "60~70 kg", result: "60~70 kg", className: "answer" },
+                { id: 1, text: "40~50 kg", result: "40~50 kg"},
+                { id: 2, text: "50~60 kg", result: "50~60 kg"},
+                { id: 3, text: "60~70 kg", result: "60~70 kg"},
             ],
         },
     ]);
@@ -82,15 +82,15 @@ export default function Quiz() {
             const answer = question.answers.find((answer) => answer.id === userAnswers[index]);
             result.push(answer.result);
             if (question.id === 1) {
-                if (answer.result === "MDMA") {
+                if (answer.result === "Alcohol") {
                     isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 1;
                     isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
                     isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
-                } else if (answer.result === "Cocaine") {
+                } else if (answer.result === "MDMA") {
                     isHighRisk = userAnswers[1] === 2 && userAnswers[3] === 3;
                     isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
                     isLowRisk = userAnswers[1] === 1 && userAnswers[3] === 1;
-                } else if (answer.result === "Alcohol") {
+                } else if (answer.result === "Cocaine") {
                     isHighRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
                     isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
                     isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;

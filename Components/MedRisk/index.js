@@ -1,12 +1,11 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from "./MedRisk.module.css"
 
 
 export default function MedRisk() {
     return (
         <>
-            <p>medium risk</p>
+            <Image src="/result/med-risk.svg" alt="risk level" width={300} height={100} />
         </>
     )
 }

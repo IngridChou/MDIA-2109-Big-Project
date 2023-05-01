@@ -1,12 +1,11 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from "./HighRisk.module.css"
 
 
 export default function HighRisk() {
     return (
         <>
-            <p>high risk</p>
+            <Image src="/result/high-risk.svg" alt="risk level" width={300} height={100} />
         </>
     )
 }
