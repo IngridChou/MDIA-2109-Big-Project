@@ -73,17 +73,17 @@ export default function Quiz() {
         questions.forEach((question, index) => {
             const answer = question.answers.find((answer) => answer.id === userAnswers[index]);
             result.push(answer.result);
-            if (question.id === 2 && answer.text === "0.3g(3 pills)") {
-                result.push(<HighRisk/>);
+            if (question.id === 2 && answer.text === "0.3g (3 pills)") {
                 isHighRisk = true;
             }
         });
-        return result;
+        return { result, isHighRisk };
     }, [userAnswers, questions]);
 
     useEffect(() => {
-        setIsHighRisk(userResults.some((result) => result === <HighRisk/>));
+        setIsHighRisk(userResults.isHighRisk);
       }, [userResults]);
+    
 
     return (
         <>
@@ -92,16 +92,16 @@ export default function Quiz() {
                     <h2 className={styles.title}>Your Result:</h2>
                     <div className={styles.resultpt1}>
                         <p>Based on your body weight:</p>
-                        <input className={styles.resultinput} type="text" readOnly value={userResults[2]} />
+                        <input className={styles.resultinput} type="text" readOnly value={userResults.result[2]} />
                     </div>
                     <div>
                         <div className={styles.resultpt2}>
                             <p>And your Dosage:</p>
                         </div>
                         <div className={styles.resultpt3}>
-                            <input className={styles.resultinput} type="text" readOnly value={userResults[1]} />
+                            <input className={styles.resultinput} type="text" readOnly value={userResults.result[1]} />
                             <p className={styles.of}>of</p>
-                            <input className={styles.resultinput} type="text" readOnly value={userResults[0]} />
+                            <input className={styles.resultinput} type="text" readOnly value={userResults.result[0]} />
                         </div>
                     </div>
                     <div>
