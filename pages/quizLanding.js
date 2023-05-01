@@ -7,6 +7,8 @@ import PrevButton from '../Components/PrevButton';
 
 
 export default function QuizLanding() {
+
+  var word = process.env.NEXT_PUBLIC_WORD;
   return (
     <>
       <Head>
@@ -19,7 +21,7 @@ export default function QuizLanding() {
         <PrevButton/>
         <h1 className={styles.header}>Quiz</h1>
         <Image className={styles.clipboard} src="/boardicon 1.svg" alt="boardicon" width={246} height={246} />
-        <h2>Ready to take quiz<br/> for you or a friend?</h2>
+        <h2>Ready to take a {word}<br/> for you or a friend?</h2>
         <ButtonQ/>
         <NavBar/>
       </main>
