@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import Question from "../Question";
 import styles from "./Quiz.module.css";
 import Image from "next/image";
+import HighRisk from "../highRisk";
 
 export default function Quiz() {
     const [questions, setQuestions] = useState([
@@ -36,6 +37,7 @@ export default function Quiz() {
     const [userAnswers, setUserAnswers] = useState([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [isHighRisk, setIsHighRisk] = useState(false);
 
 
     const handleAnswer = (answerId) => {
@@ -44,12 +46,10 @@ export default function Quiz() {
 
     const handleNext = () => {
         if (selectedAnswer === null) {
-            // If no answer is selected, show an alert
             alert('Please select an answer');
             return;
         }
 
-        // If an answer is selected, update the state with the answer and move to the next question
         setUserAnswers([...userAnswers, selectedAnswer]);
         setSelectedAnswer(null);
         setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -69,12 +69,21 @@ export default function Quiz() {
             return [];
         }
         const result = [];
+        let isHighRisk = false;
         questions.forEach((question, index) => {
             const answer = question.answers.find((answer) => answer.id === userAnswers[index]);
             result.push(answer.result);
+            if (question.id === 2 && answer.text === "0.3g(3 pills)") {
+                result.push(<HighRisk/>);
+                isHighRisk = true;
+            }
         });
         return result;
     }, [userAnswers, questions]);
+
+    useEffect(() => {
+        setIsHighRisk(userResults.some((result) => result === <HighRisk/>));
+      }, [userResults]);
 
     return (
         <>
@@ -94,6 +103,9 @@ export default function Quiz() {
                             <p className={styles.of}>of</p>
                             <input className={styles.resultinput} type="text" readOnly value={userResults[0]} />
                         </div>
+                    </div>
+                    <div>
+                    {isHighRisk && <HighRisk />}
                     </div>
 
 
