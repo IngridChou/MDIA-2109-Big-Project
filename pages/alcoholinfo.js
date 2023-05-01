@@ -17,7 +17,7 @@ export default function Alcoholinfo() {
       <main className={styles.main}>
         <PrevButton />
 
-        <h1 className={styles.header}>Alcohol</h1>
+        <h1 className={styles.header}>More Info</h1>
         <Graph/>
         <h2 className={styles.header}>Statistics</h2>
          <p clsasName={styles.content}>&#8226;77% of Canadians aged 15 years or older reported consuming alcohol in the past year<br />&#8226;Alcohol is the most commonly used psychoactive substance in Canada <br />&#8226;Prevalance of heavy drinking is highest among young adults (18-24)</p>
@@ -27,8 +27,8 @@ export default function Alcoholinfo() {
         <p className={styles.content}>https://www.wellnesstogether.ca/en-CA <br /> https://www.drugrehab.ca/ <br />https://canaacna.org/</p>
 
         <h2 className={styles.subheading}>References</h2>
-        <p className={styles.content}>https://ccsa.ca/sites/default/files/2022-10/CCSA-MDMA-Ecstasy-Drug-Summary-2022-en.pdf</p>
-        <a href="https://ccsa.ca/sites/default/files/2022-10/CCSA-MDMA-Ecstasy-Drug-Summary-2022-en.pdf">Click here to visit Example.com</a>
+    
+        <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/230224/dq230224a-eng.htm">https://www.statcan.gc.ca/</a>
     
         <NavBar />
         </main>

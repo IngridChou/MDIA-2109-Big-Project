@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 15px;
     align-items: center;
-    width: 21.938rem;
+    width: 10.938rem;
     height: 4.063rem;
     border-radius: 12px;
     background-color: var(--cyan);
@@ -13,7 +13,6 @@
     font-weight: 600;
     font-size: 21px;
     color: var(--white);
-    margin: 1rem;
 }
 
 .link {
