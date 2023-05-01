@@ -3,6 +3,8 @@ import Question from "../Question";
 import styles from "./Quiz.module.css";
 import Image from "next/image";
 import HighRisk from "../highRisk";
+import MedRisk from "../MedRisk";
+import LowRisk from "../LowRisk";
 import ButtonQR from "../ButtonQR";
 
 export default function Quiz() {
@@ -39,6 +41,8 @@ export default function Quiz() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isHighRisk, setIsHighRisk] = useState(false);
+    const [isMedRisk, setIsMedRisk] = useState(false);
+    const [isLowRisk, setIsLowRisk] = useState(false);
 
 
     const handleAnswer = (answerId) => {
@@ -71,20 +75,37 @@ export default function Quiz() {
         }
         const result = [];
         let isHighRisk = false;
+        let isMedRisk = false;
+        let isLowRisk = false;
+
         questions.forEach((question, index) => {
             const answer = question.answers.find((answer) => answer.id === userAnswers[index]);
             result.push(answer.result);
-            if (question.id === 2 && answer.text === "0.3g (3 pills)") {
-                isHighRisk = true;
+            if (question.id === 1) {
+                if (answer.result === "MDMA") {
+                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 1;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
+                } else if (answer.result === "Cocaine") {
+                    isHighRisk = userAnswers[1] === 2 && userAnswers[3] === 3;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[3] === 1;
+                } else if (answer.result === "Alcohol") {
+                    isHighRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
+                }
             }
         });
-        return { result, isHighRisk };
+        return { result, isHighRisk, isMedRisk, isLowRisk };
     }, [userAnswers, questions]);
 
     useEffect(() => {
         setIsHighRisk(userResults.isHighRisk);
-      }, [userResults]);
-    
+        setIsMedRisk(userResults.isMedRisk);
+        setIsLowRisk(userResults.isLowRisk);
+    }, [userResults]);
+
 
     return (
         <>
@@ -106,11 +127,13 @@ export default function Quiz() {
                         </div>
                     </div>
                     <div>
-                    {isHighRisk && <HighRisk />}
+                        {isHighRisk && <HighRisk />}
+                        {isMedRisk && <MedRisk />}
+                        {isLowRisk && <LowRisk />}
                     </div>
                     <div>
                         <button className={styles.button} onClick={handleRetakeQuiz}>Retake Quiz</button>
-                        <ButtonQR/>
+                        <ButtonQR />
                     </div>
                 </>
             ) : (
@@ -119,12 +142,12 @@ export default function Quiz() {
                     <div className={styles.progressBar} style={{ width: `${(currentQuestionIndex + 1) / questions.length * 100}%` }} />
                     <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} />
                     <div className={styles.page}>
-                    <button className={styles.nextbutton} onClick={handleNext}>Next</button>
-                    {currentQuestionIndex > 0 && (
-                        <button className={styles.prevButton} onClick={handlePrev}>
-                            <Image src="/backArrow.svg" alt="Previous Button" width={25} height={25} />
-                        </button>
-                    )}
+                        <button className={styles.nextbutton} onClick={handleNext}>Next</button>
+                        {currentQuestionIndex > 0 && (
+                            <button className={styles.prevButton} onClick={handlePrev}>
+                                <Image src="/backArrow.svg" alt="Previous Button" width={25} height={25} />
+                            </button>
+                        )}
                     </div>
                 </div>
             )}
