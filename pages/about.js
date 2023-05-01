@@ -34,7 +34,7 @@ export default function About() {
         <div className={styles.profiles}>
           <Image src='/profile.svg' width={175} height={175 }/>
           <h2>Paul</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <p>One of DrugMinder's developers that aims to bring drug awareness to teens and adults.</p>
         </div>
         </div>
         <NavBar/>
