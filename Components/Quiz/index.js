@@ -84,16 +84,34 @@ export default function Quiz() {
             if (question.id === 1) {
                 if (answer.result === "Alcohol") {
                     isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 1;
+                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 2;
                     isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 2;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
                     isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 2;
+                    isLowRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 3;
                 } else if (answer.result === "MDMA") {
-                    isHighRisk = userAnswers[1] === 2 && userAnswers[3] === 3;
+                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 1;
+                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 2;
                     isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[3] === 1;
-                } else if (answer.result === "Cocaine") {
-                    isHighRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 2;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
                     isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 2;
+                    isLowRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 3;
+                } else if (answer.result === "Cocaine") {
+                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 1;
+                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 2;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 2;
+                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 2;
+                    isLowRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
+                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 3;
                 }
             }
         });
