@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/alcoholinfo.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
+import Graph from '../Components/Graph'
 
 export default function Alcoholinfo() {
     return (
@@ -17,7 +18,7 @@ export default function Alcoholinfo() {
         <PrevButton />
 
         <h1 className={styles.header}>Alcohol</h1>
-        <Image src="/alcoholstats.png" alt="alcinfo" width={350} height={246} />
+        <Graph/>
         <h2 className={styles.subheading}>Description</h2>
         <p clsasName={styles.content}>Cocaine is a highly addictive stimulant drug that is<br />derived from the leaves of the coca plant. Cocaine <br />works by blocking the reabsorption of dopamine</p>
 
