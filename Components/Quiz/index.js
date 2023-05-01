@@ -3,6 +3,7 @@ import Question from "../Question";
 import styles from "./Quiz.module.css";
 import Image from "next/image";
 import HighRisk from "../highRisk";
+import ButtonQR from "../ButtonQR";
 
 export default function Quiz() {
     const [questions, setQuestions] = useState([
@@ -107,9 +108,10 @@ export default function Quiz() {
                     <div>
                     {isHighRisk && <HighRisk />}
                     </div>
-
-
-                    <button className={styles.button} onClick={handleRetakeQuiz}>Retake Quiz</button>
+                    <div>
+                        <button className={styles.button} onClick={handleRetakeQuiz}>Retake Quiz</button>
+                        <ButtonQR/>
+                    </div>
                 </>
             ) : (
                 <div>

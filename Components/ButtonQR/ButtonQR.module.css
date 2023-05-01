@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    width: 16.314rem;
+    height: 4.063rem;
+    border-radius: 12px;
+    background-color: var(--cyan);
+    border: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    color: var(--white);
+    margin-top: 4rem;
+}
+
+.button:hover {
+    background-color: var(--dark-blue);
+    transition: 0.15s;
+    opacity: 0.9;
+    scale: 105%;
+  }
+
+.link {
+    text-decoration: none;
+}
