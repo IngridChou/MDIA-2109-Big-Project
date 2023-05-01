@@ -13,27 +13,27 @@ export default function Quiz() {
             id: 1,
             question: "Select a substance to test for",
             answers: [
-                { id: 1, text: "Alcohol", result: "Alcohol"},
-                { id: 2, text: "MDMA", result: "MDMA"},
-                { id: 3, text: "Cocaine", result: "Cocaine"},
+                { id: 1, text: "Alcohol", result: "Alcohol" },
+                { id: 2, text: "MDMA", result: "MDMA" },
+                { id: 3, text: "Cocaine", result: "Cocaine" },
             ],
         },
         {
             id: 2,
             question: "Select Your Dosage of drug",
             answers: [
-                { id: 1, text: "0.1g (1 pill)", result: "0.1g (1 pill)"},
-                { id: 2, text: "0.2g (2 pills)", result: "0.2g (2 pills)"},
-                { id: 3, text: "0.3g (3 pills)", result: "0.3g (3 pills)"},
+                { id: 1, text: "0.1g (1 pill)", result: "0.1g (1 pill)" },
+                { id: 2, text: "0.2g (2 pills)", result: "0.2g (2 pills)" },
+                { id: 3, text: "0.3g (3 pills)", result: "0.3g (3 pills)" },
             ],
         },
         {
             id: 3,
             question: "Select Your Body Weight",
             answers: [
-                { id: 1, text: "40~50 kg", result: "40~50 kg"},
-                { id: 2, text: "50~60 kg", result: "50~60 kg"},
-                { id: 3, text: "60~70 kg", result: "60~70 kg"},
+                { id: 1, text: "40~50 kg", result: "40~50 kg" },
+                { id: 2, text: "50~60 kg", result: "50~60 kg" },
+                { id: 3, text: "60~70 kg", result: "60~70 kg" },
             ],
         },
     ]);
@@ -73,6 +73,7 @@ export default function Quiz() {
         if (userAnswers.length < 3) {
             return [];
         }
+
         const result = [];
         let isHighRisk = false;
         let isMedRisk = false;
@@ -83,35 +84,47 @@ export default function Quiz() {
             result.push(answer.result);
             if (question.id === 1) {
                 if (answer.result === "Alcohol") {
-                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 1;
-                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 2;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 2;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 2;
-                    isLowRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 3;
+                    if (userAnswers[2] === 1) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    } else if (userAnswers[2] === 2) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    } else if (userAnswers[2] === 3) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    }
                 } else if (answer.result === "MDMA") {
-                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 1;
-                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 2;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 2;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 2;
-                    isLowRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 3;
+                    if (userAnswers[2] === 1) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    } else if (userAnswers[2] === 2) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    } else if (userAnswers[2] === 3) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    }
                 } else if (answer.result === "Cocaine") {
-                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 1;
-                    isHighRisk = userAnswers[1] === 3 && userAnswers[2] === 2;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 1;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 2;
-                    isMedRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 1;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 2;
-                    isLowRisk = userAnswers[1] === 2 && userAnswers[2] === 3;
-                    isLowRisk = userAnswers[1] === 1 && userAnswers[2] === 3;
+                    if (userAnswers[2] === 1) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    } else if (userAnswers[2] === 2) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    } else if (userAnswers[2] === 3) {
+                        isLowRisk = userAnswers[1] === 1;
+                        isMedRisk = userAnswers[1] === 2;
+                        isHighRisk = userAnswers[1] === 3;
+                    }
                 }
             }
         });
