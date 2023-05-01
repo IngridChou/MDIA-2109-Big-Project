@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/mdmainfo.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from "../Components/NavBar"
+import GraphM from '../Components/GraphM'
 
 
 export default function Mdmainfo() {
@@ -18,7 +19,7 @@ export default function Mdmainfo() {
         <PrevButton />
 
         <h1 className={styles.header}>More Info</h1>
-        <Image src="/mdmastats.png" alt="mdmainfo" width={246} height={246} />
+       <GraphM/>
         <h2 className={styles.subheading}>Statistics</h2>
         <p clsasName={styles.content}>&#8226;1.7% of Canadians aged 15 years or older reported<br /> using MDMA in the past year<br />&#8226;The RCMP seized 18,000 tablets of MDMA in <br />Canada <br />&#8226;25% of users reported mixing alcohol and MDMA<br /> together</p>
 
