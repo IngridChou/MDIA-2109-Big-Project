@@ -36,8 +36,8 @@ export default function Graph() {
                 {
                     label: 'Number of People',
                     data: [94300, 77100, 62100, 66500, 81000],
-                    borderColor: 'rgb(53,162,235)',
-                    backgroundColor: 'rgba(53,162,235,0.4)'
+                    borderColor: 'rgb(63, 157, 183)',
+                    backgroundColor: 'rgba(63, 157, 183, 0.4)'
                 }
             ]
         })
