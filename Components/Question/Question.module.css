@@ -31,7 +31,8 @@
     justify-content: space-evenly;
     border-radius: 0.801rem;
     transition: background-color 0.15s ease-in-out;
-    border: none
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
 
   .options:hover {

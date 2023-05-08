@@ -6,6 +6,7 @@
     margin-bottom: 1.25rem;
     border-radius: 1.25rem;
     justify-content: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   
   .progressBar::before {
@@ -67,6 +68,7 @@
     text-align: center;
     border: none;
     margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
 
   .nextbutton:hover {
@@ -106,6 +108,9 @@
   color: #4c4c4c;
   padding-left: 1rem;
   border-radius: 0.5rem;
+  border-color: rgba(51, 51, 51, 0.1);
+  border-style: solid;
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .resultpt2 {
@@ -137,6 +142,7 @@
   font-size: 21px;
   color: var(--white);
   margin-top: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .button:hover {

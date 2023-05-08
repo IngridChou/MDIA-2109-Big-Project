@@ -25,6 +25,7 @@
     font-weight: 500;
     font-size: 16pt;
     color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .quiz {
@@ -42,6 +43,7 @@
     font-weight: 500;
     font-size: 16pt;
     color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .about {
@@ -59,6 +61,7 @@
     font-weight: 500;
     font-size: 16pt;
     color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .link {
