@@ -4,6 +4,7 @@ import styles from '../styles/mdmainfo.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from "../Components/NavBar"
 import GraphM from '../Components/GraphM'
+import Link from 'next/link'
 
 
 export default function Mdmainfo() {
@@ -24,11 +25,17 @@ export default function Mdmainfo() {
         <p clsasName={styles.content}>&#8226;1.7% of Canadians aged 15 years or older reported<br /> using MDMA in the past year<br />&#8226;The RCMP seized 18,000 tablets of MDMA in <br />Canada <br />&#8226;25% of users reported mixing alcohol and MDMA<br /> together</p>
 
         <h2 className={styles.subheading}>Seek Help</h2>
-        <p className={styles.content}>https://www.wellnesstogether.ca/en-CA <br /> https://www.drugrehab.ca/ <br />https://canaacna.org/</p>
+        <p className={styles.content}>
+          <Link className={styles.link} href="https://www.wellnesstogether.ca/en-CA">https://www.wellnesstogether.ca/en-CA</Link>
+          <br />
+          <Link className={styles.link} href="https://www.drugrehab.ca/">https://www.drugrehab.ca/</Link>
+          <br />
+          <Link className={styles.link} href="https://canaacna.org/">https://canaacna.org/</Link>
+        </p>
 
         <h2 className={styles.subheading}>Resources</h2>
         
-        <a href="https://ccsa.ca/sites/default/files/2022-10/CCSA-MDMA-Ecstasy-Drug-Summary-2022-en.pdf">https://ccsa.ca/</a>
+        <Link className={styles.link} href="https://ccsa.ca/sites/default/files/2022-10/CCSA-MDMA-Ecstasy-Drug-Summary-2022-en.pdf">https://ccsa.ca/</Link>
         <NavBar />  
         </main>
         </>

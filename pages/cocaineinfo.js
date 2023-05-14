@@ -5,6 +5,7 @@ import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
 import MoreInfo from '../Components/MoreInfo'
 import GraphM from '../Components/GraphM'
+import Link from 'next/link'
 
 export default function Cocaineinfo() {
     return (
@@ -26,10 +27,16 @@ export default function Cocaineinfo() {
          <p clsasName={styles.content}>&#8226;The global cocaine market is estimated to be a <br />100 billion dollars per year<br />&#8226;The use of cocaine is more prevalent among<br /> young adults (18-24) <br />&#8226;Prevalance of cocaine was 2.0% among<br /> people living in Canada</p>
         <hr />
         <h2 className={styles.subheading}>Seek Help</h2>
-        <p clasName={styles.content}>https://www.wellnesstogether.ca/en-CA <br /> https://www.drugrehab.ca/ <br />https://canaacna.org/</p>
+        <p clasName={styles.content}>
+          <Link className={styles.link} href="https://www.wellnesstogether.ca/en-CA">https://www.wellnesstogether.ca/en-CA</Link>
+          <br />
+          <Link className={styles.link} href="https://www.drugrehab.ca/">https://www.drugrehab.ca/</Link>
+          <br />
+          <Link className={styles.link} href="https://canaacna.org/">https://canaacna.org/</Link>
+        </p>
 
         <h2 className={styles.subheading}>Resources</h2>
-        <a href="https://www.ccsa.ca/sites/default/files/2022-10/CCSA-Canadian-Drug-Summary-Cocaine-2022-en.pdf">https://ccsa.ca/</a>
+        <Link className={styles.link} href="https://www.ccsa.ca/sites/default/files/2022-10/CCSA-Canadian-Drug-Summary-Cocaine-2022-en.pdf">https://ccsa.ca/</Link>
         <NavBar />
         </main>
 </>

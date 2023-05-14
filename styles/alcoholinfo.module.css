@@ -39,6 +39,11 @@
     color: var(--dark-blue);
 }
 
+.link {
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
 @media screen and (width: 390px) and (height: 844px) {
     .main{
        
