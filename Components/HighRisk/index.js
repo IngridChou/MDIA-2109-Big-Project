@@ -13,9 +13,10 @@ export default function HighRisk() {
             <div className={styles.instructions}>
                 <h2>What should you do?</h2>
                 <ul>
-                    <li>Call emergency services immediately. Provide them your location and follow their instructions carefully</li>
-                    <li>Administer naloxone. Follow the instructions on the package or or ask for guidance from emergency services</li>
-                    <li>Place them in the recovery position to prevent them from choking on vomit</li>
+                    <li>Call 911 immediately!! Overdosing can be fatal, your life could be in danger!</li>
+                    <li>Do NOT take any more drugs or alcohol at this point</li>
+                    <li>Have information ready on age, pre-existing conditions, drug allergies, and the dosage amount taken to provide to emergency responders.</li>
+                    <li>Stay in the recovery position, doing so will help prevent choking if vomiting occurs.</li>
                 </ul>
             </div>
         </>
