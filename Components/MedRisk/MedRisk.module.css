@@ -1,0 +1,23 @@
+/*Kanit Regular 400 / SemiBold 600 / Bold 700*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap');
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 24pt;
+    line-height: 0;
+    margin-top: 2rem;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    margin-top: 2rem;
+}
