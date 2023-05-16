@@ -16,7 +16,7 @@ export default function HighRisk() {
                     <li>Call 911 immediately!! Overdosing can be fatal, your life could be in danger!</li>
                     <li>Do NOT take any more drugs or alcohol at this point</li>
                     <li>Have information ready on age, pre-existing conditions, drug allergies, and the dosage amount taken to provide to emergency responders.</li>
-                    <li>Stay in the recovery position, doing so will help prevent choking if vomiting occurs.</li>
+                    <li>Stay in the recovery position, doing so will help prevent choking if vomiting occurs</li>
                 </ul>
             </div>
         </>
