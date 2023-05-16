@@ -13,9 +13,9 @@ export default function MedRisk() {
             <div className={styles.instructions}>
                 <h2>What should you do?</h2>
                 <ul>
-                    <li>Call emergency services immediately. Provide them your location and follow their instructions carefully</li>
-                    <li>Administer naloxone. Follow the instructions on the package or or ask for guidance from emergency services</li>
-                    <li>Place them in the recovery position to prevent them from choking on vomit</li>
+                    <li>It is recommended to stop taking any drugs or alcohol at this point</li>
+                    <li>Any further consumption may put you at high risk of overdosing</li>
+                    <li>Drink water: be sure to drink water to avoid dehydration</li>
                 </ul>
             </div>
         </>
