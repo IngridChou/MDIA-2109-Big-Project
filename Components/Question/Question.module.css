@@ -32,7 +32,7 @@
     border-radius: 0.801rem;
     transition: background-color 0.15s ease-in-out;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.25rem 0.75rem;
   }
 
   .options:hover {

@@ -1,26 +1,26 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 680px;
+    height: 42.5rem;
 }
 
 .img1 {
     position: relative;
-    left: -32px;
+    left: -2rem;
     animation: fadeInAnimation 1s ease-in;
 }
 
 .img2 {
     position: relative;
-    right: -32px;
-    top: -154px;
+    right: -2rem;
+    top: -9.625rem;
     animation: fadeInAnimation 1s ease-in;
 }
 
 .img3 {
     position: relative;
-    left: -32px;
-    top: -312px;
+    left: -2rem;
+    top: -19.5rem;
     animation: fadeInAnimation 1s ease-in;
 }
 

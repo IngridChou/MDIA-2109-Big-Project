@@ -7,17 +7,17 @@ export default function ProgressBar({ currentQuestionIndex }) {
     <div
       style={{
         backgroundColor: "#ccc",
-        height: "20px",
-        borderRadius: "10px",
-        margin: "20px 0",
+        height: "1.25rem",
+        borderRadius: "0.625rem",
+        margin: "1.25rem 0",
         position: "relative",
       }}
     >
       <div
         style={{
           backgroundColor: "#0066CC",
-          height: "20px",
-          borderRadius: "10px",
+          height: "1.25rem",
+          borderRadius: "0.625rem",
           width: progressWidth,
           position: "absolute",
           top: 0,

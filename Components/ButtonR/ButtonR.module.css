@@ -6,20 +6,28 @@
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    gap: 65px;
+    gap: 4.063rem;
     align-items: center;
-    width: 300px;
-    height: 60px;
-    border-radius: 12px;
+    width: 20rem;
+    height: 3.75rem;
+    margin-top: 1rem;
+    border-radius: 0.75rem;
     background-color: var(--cyan);
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.1rem;
     border: none;
     color: var(--white);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.75rem;
 }
 
 .link {
     text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--orange);
+    transition: 0.15s;
+    opacity: 0.9;
+    scale: 105%;
 }
