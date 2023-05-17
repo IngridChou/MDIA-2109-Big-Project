@@ -52,7 +52,7 @@
     transition: background-color 0.15s ease-in-out;
   }
 
-  .nextbutton {
+  .nextButton {
     width: 16.314rem;
     height: 4.063rem;
     background-color: var(--dark-blue);
@@ -71,7 +71,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.25rem 0.75rem;
   }
 
-  .nextbutton:hover {
+  .nextButton:hover {
     background-color: var(--orange);
     transition: 0.15s;
     opacity: 0.9;

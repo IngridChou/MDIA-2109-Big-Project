@@ -44,14 +44,13 @@ export default function Quiz() {
     const [isMedRisk, setIsMedRisk] = useState(false);
     const [isLowRisk, setIsLowRisk] = useState(false);
 
-
     const handleAnswer = (answerId) => {
         setSelectedAnswer(answerId);
     };
 
     const handleNext = () => {
         if (selectedAnswer === null) {
-            alert('Please select an answer');
+            alert("Please select an answer");
             return;
         }
 
@@ -62,12 +61,12 @@ export default function Quiz() {
 
     const handlePrev = () => {
         setCurrentQuestionIndex(currentQuestionIndex - 1);
-    }
+    };
 
     const handleRetakeQuiz = () => {
         setUserAnswers([]);
         setCurrentQuestionIndex(0);
-    }
+    };
 
     const userResults = useMemo(() => {
         if (userAnswers.length < 3) {
@@ -137,7 +136,6 @@ export default function Quiz() {
         setIsLowRisk(userResults.isLowRisk);
     }, [userResults]);
 
-
     return (
         <>
             {userAnswers.length === 3 ? (
@@ -171,9 +169,13 @@ export default function Quiz() {
                 <div>
                     <h1 className={styles.progress}>Step {currentQuestionIndex + 1} of 3</h1>
                     <div className={styles.progressBar} style={{ width: `${(currentQuestionIndex + 1) / questions.length * 100}%` }} />
-                    <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} />
+                    <Question
+                        question={questions[currentQuestionIndex]}
+                        onAnswer={handleAnswer}
+                        selectedAnswer={selectedAnswer}
+                    />
                     <div className={styles.page}>
-                        <button className={styles.nextbutton} onClick={handleNext}>Next</button>
+                        <button className={styles.nextButton} onClick={handleNext}>Next</button>
                         {currentQuestionIndex > 0 && (
                             <button className={styles.prevButton} onClick={handlePrev}>
                                 <Image src="/backArrow.svg" alt="Previous Button" width={25} height={25} />
