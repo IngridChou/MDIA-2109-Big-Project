@@ -176,11 +176,6 @@ export default function Quiz() {
                     />
                     <div className={styles.page}>
                         <button className={styles.nextButton} onClick={handleNext}>Next</button>
-                        {currentQuestionIndex > 0 && (
-                            <button className={styles.prevButton} onClick={handlePrev}>
-                                <Image src="/backArrow.svg" alt="Previous Button" width={25} height={25} />
-                            </button>
-                        )}
                     </div>
                 </div>
             )}
