@@ -5,7 +5,7 @@ import PrevButton from '../Components/PrevButton'
 import NavBar from "../Components/NavBar"
 import GraphM from '../Components/GraphM'
 import Link from 'next/link'
-
+import Logo from '../Components/Logo'
 
 export default function Mdmainfo() {
   return (
@@ -18,7 +18,7 @@ export default function Mdmainfo() {
       </Head>
       <main className={styles.main}>
         <PrevButton />
-
+        <Logo/>
         <h1 className={styles.header}>More Info</h1>
        <GraphM/>
         <h2 className={styles.subheading}>Statistics</h2>

@@ -4,7 +4,7 @@ import styles from '../styles/reflection.module.css'
 import ReflectionImg from '../Components/ReflectionImg'
 import ButtonR from '../Components/ButtonR'
 import PrevButton from '../Components/PrevButton'
-
+import Logo from '../Components/Logo'
 
 export default function Reflection() {
   return (
@@ -17,6 +17,7 @@ export default function Reflection() {
       </Head>
       <main className={styles.main}>
         <PrevButton/>
+        <Logo/>
         <h1 className={styles.header}>Introduction</h1>
         <ReflectionImg/>
         <ButtonR/>

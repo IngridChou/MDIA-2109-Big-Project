@@ -4,6 +4,7 @@ import styles from '../styles/cocaine.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
 import MoreInfo from '../Components/MoreInfo'
+import Logo from '../Components/Logo'
 
 export default function Cocaine() {
   return (
@@ -16,7 +17,7 @@ export default function Cocaine() {
       </Head>
       <main className={styles.main}>
         <PrevButton />
-
+        <Logo/>
         <h1 className={styles.header}>Cocaine</h1>
         <Image src="/cocaine.png" alt="mdma" width={246} height={246} />
         <p clsasName={styles.content}>Cocaine is a highly addictive stimulant drug that is<br />derived from the leaves of the coca plant. Cocaine <br />works by blocking the reabsorption of dopamine</p>

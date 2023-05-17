@@ -5,6 +5,7 @@ import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
 import Graph from '../Components/Graph'
 import Link from 'next/link'
+import Logo from '../Components/Logo'
 
 export default function Alcoholinfo() {
   return (
@@ -17,7 +18,7 @@ export default function Alcoholinfo() {
       </Head>
       <main className={styles.main}>
         <PrevButton />
-
+        <Logo/>
         <h1 className={styles.header}>More Info</h1>
         <Graph />
         <h2 className={styles.header}>Statistics</h2>

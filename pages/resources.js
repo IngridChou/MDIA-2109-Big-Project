@@ -4,6 +4,7 @@ import styles from '../styles/resources.module.css'
 import NavBar from '../Components/NavBar'
 import ButtonRes from '../Components/ButtonRes'
 import PrevButton from '../Components/PrevButton'
+import Logo from '../Components/Logo'
 
 export default function Resources() {
     return (
@@ -16,6 +17,7 @@ export default function Resources() {
       </Head>
       <main className={styles.main}>
         <PrevButton/>
+        <Logo/>
         <h1 className={styles.header}>Resources</h1>
         <ButtonRes/>
         <NavBar/>

@@ -3,6 +3,7 @@ import styles from '../styles/home.module.css'
 import Quiz from '../Components/Quiz'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
+import Logo from '../Components/Logo'
 
 export default function QuizP() {
   return (
@@ -15,6 +16,7 @@ export default function QuizP() {
       </Head>
       <main className={styles.main}>
         <PrevButton/>
+        <Logo/>
         <Quiz/>
         <NavBar/>
       </main>

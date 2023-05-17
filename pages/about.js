@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/about.module.css'
 import NavBar from '../Components/NavBar'
 import PrevButton from '../Components/PrevButton'
+import Logo from '../Components/Logo'
 
 export default function About() {
   return (
@@ -15,6 +16,7 @@ export default function About() {
       </Head>
       <main className={styles.main}>
         <PrevButton/>
+        <Logo/>
         <h1 className={styles.header}>About Us</h1>
         <div classNames={styles.about}>
           <Image src='/full-logo.svg' width={300} height={60}/>

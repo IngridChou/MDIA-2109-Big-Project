@@ -4,7 +4,7 @@ import Image from 'next/image'
 import ButtonQ from '../Components/ButtonQ';
 import NavBar from '../Components/NavBar';
 import PrevButton from '../Components/PrevButton';
-
+import Logo from '../Components/Logo';
 
 export default function QuizLanding() {
 
@@ -19,6 +19,7 @@ export default function QuizLanding() {
       </Head>
       <main className={styles.main}>
         <PrevButton/>
+        <Logo/>
         <h1 className={styles.header}>Quiz</h1>
         <Image className={styles.clipboard} src="/boardicon 1.svg" alt="boardicon" width={246} height={246} />
         <h2>Ready to take a {word}<br/> for you or a friend?</h2>

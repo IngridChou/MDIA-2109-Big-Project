@@ -4,6 +4,7 @@ import styles from '../styles/alcohol.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
 import MoreInfoA from '../Components/MoreInfoA'
+import Logo from '../Components/Logo'
 
 export default function Alcohol() {
   return (
@@ -16,7 +17,7 @@ export default function Alcohol() {
       </Head>
       <main className={styles.main}>
         <PrevButton />
-
+        <Logo/>
         <h1 className={styles.header}>Alcohol</h1>
         <Image src="/alcohol.png" alt="alcohol" width={246} height={246} />
         <p clsasName={styles.content}>Alcohol is a widely used psychoactive substance<br />that is consumed for its intoxicating effects. It is a <br />depressant that affects the central nervous system.</p>

@@ -6,6 +6,7 @@ import NavBar from '../Components/NavBar'
 import MoreInfo from '../Components/MoreInfo'
 import GraphM from '../Components/GraphM'
 import Link from 'next/link'
+import Logo from '../Components/Logo'
 
 export default function Cocaineinfo() {
     return (
@@ -19,7 +20,7 @@ export default function Cocaineinfo() {
       </Head>
       <main className={styles.main}>
         <PrevButton />
-
+        <Logo/>
         <h1 className={styles.header}>More Info</h1>
 
      <GraphM/>

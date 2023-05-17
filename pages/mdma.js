@@ -4,6 +4,7 @@ import styles from '../styles/mdma.module.css'
 import PrevButton from '../Components/PrevButton'
 import NavBar from '../Components/NavBar'
 import MoreInfoM from '../Components/MoreInfoM'
+import Logo from '../Components/Logo'
 
 export default function Mdma() {
   return (
@@ -16,7 +17,7 @@ export default function Mdma() {
       </Head>
       <main className={styles.main}>
         <PrevButton />
-        
+        <Logo/>
         <h1 className={styles.header}>MDMA</h1>
         <Image src="/mdma.png" alt="mdma" width={246} height={246} />
 
