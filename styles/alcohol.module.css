@@ -50,6 +50,11 @@
     font-size: 0.938rem;
     line-height: 1.121rem;
     text-align: left;
+    width: 21rem;
+}
+
+.img {
+    margin-bottom: 1rem;
 }
 
 @media screen and (width: 390px) and (height: 844px) {

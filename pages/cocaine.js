@@ -19,7 +19,7 @@ export default function Cocaine() {
         <PrevButton />
         <Logo/>
         <h1 className={styles.header}>Cocaine</h1>
-        <Image src="/cocaine.png" alt="mdma" width={246} height={246} />
+        <Image className={styles.img} src="/cocaine.png" alt="mdma" width={340} height={246} />
         <p clsasName={styles.content}>Cocaine is a highly addictive stimulant drug that is<br />derived from the leaves of the coca plant. Cocaine <br />works by blocking the reabsorption of dopamine</p>
         <hr />
         <h2 className={styles.subheading}>Effects</h2>

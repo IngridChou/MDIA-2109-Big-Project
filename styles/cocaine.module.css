@@ -53,6 +53,11 @@
 }
 
 .main p {
-    font-size: 15px;
-    line-height: 17.94px;
+    font-size: 0.938rem;
+    line-height: 1.121rem;
+    width: 21rem;
+}
+
+.img {
+    margin-bottom: 1rem;
 }

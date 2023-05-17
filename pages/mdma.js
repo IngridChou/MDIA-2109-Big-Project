@@ -19,7 +19,7 @@ export default function Mdma() {
         <PrevButton />
         <Logo/>
         <h1 className={styles.header}>MDMA</h1>
-        <Image src="/mdma.png" alt="mdma" width={246} height={246} />
+        <Image className={styles.img} src="/mdma.png" alt="mdma" width={340} height={246} />
 
         <p clsasName={styles.content}>MDMA is a synthetic drug that affects the mood and<br />perception by altering neurotransmitters in the <br />brain like serotonin, dopamine, and norepinephrine.</p>
         <hr />
