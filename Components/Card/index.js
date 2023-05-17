@@ -10,7 +10,7 @@ export default function Card() {
                 <button className={styles.container}>
                     <div className={styles.text}>
                         <h2>Looking for a Drug?</h2>
-                        <p className={styles.description}>Click here to find more information</p>
+                        <p className={styles.description}>Click here to learn more about drugs</p>
                     </div>
                     <div className={styles.image}>
                         <Image src="/home/drug-card.png" alt="Drug Image" width={155} height={95} />

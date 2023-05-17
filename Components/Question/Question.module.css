@@ -39,13 +39,16 @@
   background-color: #123a8f;
   transition: 0.15s;
   opacity: 0.9;
+  scale: 101%;
 }
 
 .selected {
   background-color: var(--dark-blue);
   color: #ffffff;
+  scale: 101%;
 }
 
 .selected:hover {
   background-color: var(--dark-blue);
+  scale: 101%;
 }
